@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Инструкторы и автомобили — Правый ряд</title>
+<meta name="description" content="14 инструкторов и 16 учебных автомобилей, из них 6 с автоматической коробкой. Выберите обучение на МКПП, АКПП или мотоцикле.">
+<meta property="og:title" content="Инструкторы и автомобили — Правый ряд">
+<meta property="og:description" content="14 инструкторов и 16 учебных автомобилей, из них 6 с автоматической коробкой. Выберите обучение на МКПП, АКПП или мотоцикле.">
+<meta property="og:image" content="https://tz-03-avtoshkola-pravyy-ryad.vercel.app/img/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:url" content="https://tz-03-avtoshkola-pravyy-ryad.vercel.app/instructors.html">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ru_RU">
+<meta name="theme-color" content="#1E2329">
+<link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;family=Montserrat:wght@700;800&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-XXXXXXXXXX');</script>
+</head>
+<body>
+<a class="skip" href="#main">К содержанию</a>
+<header class="top">
+<div class="wrap bar">
+<a class="logo" href="index.html"><img src="img/favicon.svg" width="28" height="28" alt="">Правый ряд</a>
+<a class="tel" href="tel:+79003121212" data-event="contact_click" data-contact-type="phone">+7 (900) 312-12-12</a>
+<nav aria-label="Основное меню"><a href="index.html">Главная</a><a href="prices.html">Цены</a><a href="instructors.html" class="on" aria-current="page">Инструкторы</a><a href="pdd-test.html">Тренажёр ПДД</a><a href="branches.html">Филиалы</a><a href="contacts.html">Запись</a></nav>
+</div>
+</header>
+<main id="main">
+<section class="wrap sec">
+<h1>Инструкторы и автомобили</h1>
+<p class="lead">В автошколе 14 инструкторов и 16 учебных автомобилей, из них 6 — с автоматической коробкой. Выберите, на чём хотите учиться, и посмотрите, кто будет с вами в машине.</p>
+
+<div class="filters" role="group" aria-label="Фильтр по коробке передач">
+<button type="button" class="btn alt" aria-pressed="true" data-filter="all" data-event="instructor_view" data-gearbox="all" data-instructor-id="filter_all">Все</button>
+<button type="button" class="btn alt" aria-pressed="false" data-filter="manual" data-event="instructor_view" data-gearbox="manual" data-instructor-id="filter_manual">МКПП</button>
+<button type="button" class="btn alt" aria-pressed="false" data-filter="auto" data-event="instructor_view" data-gearbox="auto" data-instructor-id="filter_auto">АКПП</button>
+<button type="button" class="btn alt" aria-pressed="false" data-filter="moto" data-event="instructor_view" data-gearbox="moto" data-instructor-id="filter_moto">Мотоцикл</button>
+</div>
+<p id="ins-count" class="note" aria-live="polite">Показано: 6 карточек</p>
+
+<div class="grid3" id="ins-list">
+<article class="inst-card" data-gear="manual">
+<img src="img/ins-manual.webp" width="800" height="600" alt="Учебный автомобиль с механической коробкой" loading="lazy">
+<div class="in"><span class="tag">МКПП</span><h3>Андрей</h3>
+<dl><dt>Стаж</dt><dd>12 лет</dd><dt>Автомобиль</dt><dd>Lada Vesta</dd><dt>Коробка</dt><dd>механика</dd></dl>
+<p class="more" id="more-ins_01" hidden>Ведёт вождение на автодроме Центрального филиала и в городе. Спокойно объясняет трогание в горку и парковку.</p>
+<button type="button" class="btn alt more-btn" aria-expanded="false" aria-controls="more-ins_01" data-event="instructor_view" data-gearbox="manual" data-instructor-id="ins_01">Подробнее</button></div>
+</article>
+<article class="inst-card" data-gear="manual">
+<img src="img/ins-manual.webp" width="800" height="600" alt="Учебный автомобиль с механической коробкой" loading="lazy">
+<div class="in"><span class="tag">МКПП</span><h3>Ольга</h3>
+<dl><dt>Стаж</dt><dd>8 лет</dd><dt>Автомобиль</dt><dd>Lada Granta</dd><dt>Коробка</dt><dd>механика</dd></dl>
+<p class="more" id="more-ins_02" hidden>Подбирает время вождения под расписание пар. Работает с теми, кто садится за руль впервые.</p>
+<button type="button" class="btn alt more-btn" aria-expanded="false" aria-controls="more-ins_02" data-event="instructor_view" data-gearbox="manual" data-instructor-id="ins_02">Подробнее</button></div>
+</article>
+<article class="inst-card" data-gear="manual">
+<img src="img/ins-manual.webp" width="800" height="600" alt="Учебный автомобиль с механической коробкой" loading="lazy">
+<div class="in"><span class="tag">МКПП</span><h3>Сергей</h3>
+<dl><dt>Стаж</dt><dd>15 лет</dd><dt>Автомобиль</dt><dd>Lada Vesta</dd><dt>Коробка</dt><dd>механика</dd></dl>
+<p class="more" id="more-ins_03" hidden>Ведёт занятия по восстановлению навыков для водителей после долгого перерыва.</p>
+<button type="button" class="btn alt more-btn" aria-expanded="false" aria-controls="more-ins_03" data-event="instructor_view" data-gearbox="manual" data-instructor-id="ins_03">Подробнее</button></div>
+</article>
+<article class="inst-card" data-gear="auto">
+<img src="img/ins-auto.webp" width="800" height="600" alt="Учебный автомобиль с автоматической коробкой" loading="lazy">
+<div class="in"><span class="tag auto">АКПП</span><h3>Марина</h3>
+<dl><dt>Стаж</dt><dd>6 лет</dd><dt>Автомобиль</dt><dd>Kia Rio</dd><dt>Коробка</dt><dd>автомат</dd></dl>
+<p class="more" id="more-ins_04" hidden>Учит на автомобиле с автоматической коробкой: больше внимания дороге, меньше — педалям.</p>
+<button type="button" class="btn alt more-btn" aria-expanded="false" aria-controls="more-ins_04" data-event="instructor_view" data-gearbox="auto" data-instructor-id="ins_04">Подробнее</button></div>
+</article>
+<article class="inst-card" data-gear="auto">
+<img src="img/ins-auto.webp" width="800" height="600" alt="Учебный автомобиль с автоматической коробкой" loading="lazy">
+<div class="in"><span class="tag auto">АКПП</span><h3>Дмитрий</h3>
+<dl><dt>Стаж</dt><dd>10 лет</dd><dt>Автомобиль</dt><dd>Hyundai Solaris</dd><dt>Коробка</dt><dd>автомат</dd></dl>
+<p class="more" id="more-ins_05" hidden>Готовит к экзамену в городе: маршруты, перестроения, парковка задним ходом.</p>
+<button type="button" class="btn alt more-btn" aria-expanded="false" aria-controls="more-ins_05" data-event="instructor_view" data-gearbox="auto" data-instructor-id="ins_05">Подробнее</button></div>
+</article>
+<article class="inst-card" data-gear="moto">
+<img src="img/ins-moto.webp" width="800" height="600" alt="Учебный мотоцикл на автодроме" loading="lazy">
+<div class="in"><span class="tag moto">Мотоцикл</span><h3>Игорь</h3>
+<dl><dt>Стаж</dt><dd>9 лет</dd><dt>Мотоцикл</dt><dd>Honda CB400</dd><dt>Категория</dt><dd>A</dd></dl>
+<p class="more" id="more-ins_06" hidden>Ведёт обучение на категорию A на автодроме: змейка, восьмёрка, торможение.</p>
+<button type="button" class="btn alt more-btn" aria-expanded="false" aria-controls="more-ins_06" data-event="instructor_view" data-gearbox="moto" data-instructor-id="ins_06">Подробнее</button></div>
+</article>
+</div>
+<p class="note">Здесь показаны инструкторы, к которым можно записаться в ноябре. Нажмите «Подробнее», чтобы узнать об инструкторе больше.</p>
+<p class="actions"><a class="btn" href="contacts.html" data-event="cta_click" data-button-name="instructors_signup" data-page-section="instructors">Записаться к инструктору</a></p>
+</section>
+</main>
+<footer class="foot">
+<div class="wrap">
+<div><b>Центральный:</b> ул. Автомобилистов, 22 — классы, автодром<br><b>Северный:</b> ул. Полярная, 5 — класс<br>Теория: пн, ср, пт с 18:30 до 21:00 или онлайн</div>
+<div><a href="tel:+79003121212" data-event="contact_click" data-contact-type="phone">+7 (900) 312-12-12</a><br><a href="mailto:info@pravyy-ryad.example" data-event="contact_click" data-contact-type="email">info@pravyy-ryad.example</a><br><a href="privacy.html">Политика конфиденциальности</a></div>
+<div class="soc" aria-label="Соцсети">
+<a href="https://instagram.com/pravyy_ryad_school" data-event="social_click" data-network="instagram" data-page-section="footer">Instagram</a>
+<a href="https://vk.com/pravyy_ryad_school" data-event="social_click" data-network="vk" data-page-section="footer">ВКонтакте</a>
+<a href="https://t.me/pravyy_ryad_school" data-event="social_click" data-network="telegram" data-page-section="footer">Telegram</a>
+<a href="https://youtube.com/@pravyy_ryad_school" data-event="social_click" data-network="youtube" data-page-section="footer">YouTube</a>
+</div>
+<p class="copy">© 2026 ЧУ ДПО «Автошкола „Правый ряд“». ИНН 9903 225 914</p>
+</div>
+</footer>
+<script src="js/analytics.js"></script>
+<script src="js/utm.js"></script>
+<script src="js/instructors.js"></script>
+</body>
+</html>

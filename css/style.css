@@ -2,6 +2,7 @@
    Шрифты: Montserrat — заголовки, Inter — текст. */
 :root{--b:#1F6FD1;--b-dark:#1758a8;--y:#F5C518;--d:#1E2329;--bg:#fff;--g:#f2f4f7;--line:#d5dae0;--muted:#4a525c;--ok:#16794a;--bad:#b00020}
 *{box-sizing:border-box}
+[hidden]{display:none!important}
 html{scroll-padding-top:80px;-webkit-text-size-adjust:100%}
 body{margin:0;font:16px/1.6 Inter,system-ui,sans-serif;color:var(--d);background:var(--bg);overflow-wrap:break-word}
 h1,h2,h3,.logo{font-family:Montserrat,system-ui,sans-serif;line-height:1.2}
@@ -89,14 +90,14 @@ fieldset.radios legend{font-weight:600;padding:0;margin-bottom:4px}
 
 /* Фильтры и вкладки */
 .filters,.tabs{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 20px}
-.inst-card{display:flex;flex-direction:column;background:var(--g);border-radius:12px;overflow:hidden;border:0;padding:0;text-align:left;font:inherit;color:inherit;cursor:pointer;width:100%}
+.inst-card{display:flex;flex-direction:column;background:var(--g);border-radius:12px;overflow:hidden}
 .inst-card img{width:100%;aspect-ratio:4/3;object-fit:cover}
 .inst-card .in{padding:14px 16px 18px}
 .inst-card h3{margin:0 0 6px;font-size:19px}
 .inst-card dl{margin:0;display:grid;grid-template-columns:auto 1fr;gap:2px 10px}
 .inst-card dt{color:var(--muted)}.inst-card dd{margin:0;font-weight:600}
-.inst-card .more{margin-top:10px;color:var(--muted)}
-.inst-card[aria-expanded="true"]{outline:3px solid var(--b)}
+.inst-card .more{margin:10px 0 0;color:var(--muted)}
+.more-btn{margin-top:12px;width:100%}
 .tag{display:inline-block;background:var(--b);color:#fff;font-size:13px;padding:2px 8px;border-radius:10px;margin-bottom:8px}
 .tag.auto{background:var(--ok)}.tag.moto{background:var(--d)}
 .branch{display:grid;gap:24px}
