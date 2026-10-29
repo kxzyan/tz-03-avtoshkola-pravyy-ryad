@@ -1,0 +1,27 @@
+<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Цены и калькулятор — Правый ряд</title><meta name="description" content="Рассчитайте стоимость обучения и ежемесячный платёж в рассрочку на 3, 6 или 10 месяцев.">
+<meta property="og:title" content="Цены и калькулятор — Правый ряд"><meta property="og:description" content="Рассчитайте стоимость обучения и ежемесячный платёж в рассрочку на 3, 6 или 10 месяцев."><meta property="og:image" content="img/og.jpg"><meta property="og:type" content="website">
+<link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-XXXXXXXXXX');</script>
+</head><body>
+<header class="top"><div class="wrap bar"><a class="logo" href="index.html">Правый ряд</a><nav><a href="index.html">Главная</a><a href="prices.html" class=on aria-current=page>Цены</a><a href="instructors.html">Инструкторы</a><a href="pdd-test.html">Тренажёр ПДД</a><a href="branches.html">Филиалы</a><a href="contacts.html">Запись</a></nav>
+<a class="tel" href="tel:+79003121212" data-event="contact_click" data-contact-type="phone">+7 (900) 312-12-12</a></div></header>
+<main><section class="wrap sec"><h1>Цены</h1><h2>Калькулятор стоимости</h2>
+<form id="calc" class="box"><label>Категория<select id="c-cat"><option value="b_manual">B, механика (49 000 ₽)</option><option value="b_auto">B, автомат (52 000 ₽)</option><option value="a_moto">A, мотоцикл (28 000 ₽)</option><option value="refresh">Восстановление навыков (17 000 ₽)</option></select></label>
+<label>Дополнительные часы вождения (0–20), 1 800 ₽ за час<input id="c-hours" type="number" min="0" max="20" value="0"></label>
+<label class="chk"><input id="c-stud" type="checkbox"> Я студент очной формы (−15 %)</label>
+<p class="total">Итого: <b id="c-total">—</b></p>
+<div id="c-inst" class="inst"></div></form>
+<section id="auto"><h2>Рассрочка</h2><p>Без переплаты на 3, 6 или 10 месяцев. Выберите срок в калькуляторе выше.</p>
+<div class="inst-btns"><button class="btn alt" data-m="3">3 месяца</button><button class="btn alt" data-m="6">6 месяцев</button><button class="btn alt" data-m="10">10 месяцев</button></div></section>
+<h2>Прайс-лист</h2><a class="btn alt" href="files/price.pdf" download>Скачать прайс-лист PDF</a>
+<p class="note">Дополнительный час вождения — 1 800 ₽.</p></section></main>
+<footer class="foot"><div class="wrap"><div><b>Центральный:</b> ул. Автомобилистов, 22<br><b>Северный:</b> ул. Полярная, 5</div>
+<div><a href="mailto:info@pravyy-ryad.example" data-event="contact_click" data-contact-type="email">info@pravyy-ryad.example</a><br><a href="privacy.html">Политика конфиденциальности</a></div>
+<div class="soc"><a href="https://instagram.com/pravyy_ryad_school" data-event="social_click" data-network="instagram" data-page-section="footer">Instagram</a>
+<a href="#" data-event="social_click" data-network="vk" data-page-section="footer">ВКонтакте</a>
+<a href="#" data-event="social_click" data-network="telegram" data-page-section="footer">Telegram</a></div></div></footer>
+<script src="js/analytics.js"></script><script src="js/calc.js"></script></body></html>
