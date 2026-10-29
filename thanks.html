@@ -1,19 +1,77 @@
-<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Спасибо — Правый ряд</title><meta name="description" content="Заявка отправлена. Менеджер автошколы свяжется с вами.">
-<meta property="og:title" content="Спасибо — Правый ряд"><meta property="og:description" content="Заявка отправлена. Менеджер автошколы свяжется с вами."><meta property="og:image" content="img/og.jpg"><meta property="og:type" content="website">
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Заявка принята — Правый ряд</title>
+<meta name="description" content="Заявка отправлена. Менеджер автошколы «Правый ряд» свяжется с вами и пригласит на консультацию.">
+<meta property="og:title" content="Заявка принята — Правый ряд">
+<meta property="og:description" content="Заявка отправлена. Менеджер автошколы «Правый ряд» свяжется с вами и пригласит на консультацию.">
+<meta property="og:image" content="https://tz-03-avtoshkola-pravyy-ryad.vercel.app/img/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:url" content="https://tz-03-avtoshkola-pravyy-ryad.vercel.app/thanks.html">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ru_RU">
+<meta name="theme-color" content="#1E2329">
 <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;family=Montserrat:wght@700;800&amp;display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
+<!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-XXXXXXXXXX');</script>
-</head><body>
-<header class="top"><div class="wrap bar"><a class="logo" href="index.html">Правый ряд</a><nav><a href="index.html">Главная</a><a href="prices.html">Цены</a><a href="instructors.html">Инструкторы</a><a href="pdd-test.html">Тренажёр ПДД</a><a href="branches.html">Филиалы</a><a href="contacts.html">Запись</a></nav>
-<a class="tel" href="tel:+79003121212" data-event="contact_click" data-contact-type="phone">+7 (900) 312-12-12</a></div></header>
-<main><section class="wrap sec"><h1>Заявка принята</h1><p>Номер вашей заявки: <b id="rid">—</b></p><h2>Что взять на консультацию</h2><p>Паспорт, медицинскую справку и студенческий билет, если он есть.</p>
-<p class="soc"><a href="https://instagram.com/pravyy_ryad_school" data-event="social_click" data-network="instagram" data-page-section="thanks">Instagram</a> <a href="#" data-event="social_click" data-network="vk" data-page-section="thanks">ВКонтакте</a> <a href="#" data-event="social_click" data-network="telegram" data-page-section="thanks">Telegram</a></p></section></main>
-<footer class="foot"><div class="wrap"><div><b>Центральный:</b> ул. Автомобилистов, 22<br><b>Северный:</b> ул. Полярная, 5</div>
-<div><a href="mailto:info@pravyy-ryad.example" data-event="contact_click" data-contact-type="email">info@pravyy-ryad.example</a><br><a href="privacy.html">Политика конфиденциальности</a></div>
-<div class="soc"><a href="https://instagram.com/pravyy_ryad_school" data-event="social_click" data-network="instagram" data-page-section="footer">Instagram</a>
-<a href="#" data-event="social_click" data-network="vk" data-page-section="footer">ВКонтакте</a>
-<a href="#" data-event="social_click" data-network="telegram" data-page-section="footer">Telegram</a></div></div></footer>
-<script src="js/analytics.js"></script><script>try{document.getElementById('rid').textContent=sessionStorage.getItem('last_request_id')||'—'}catch(e){}</script></body></html>
+</head>
+<body>
+<a class="skip" href="#main">К содержанию</a>
+<header class="top">
+<div class="wrap bar">
+<a class="logo" href="index.html"><img src="img/favicon.svg" width="28" height="28" alt="">Правый ряд</a>
+<a class="tel" href="tel:+79003121212" data-event="contact_click" data-contact-type="phone">+7 (900) 312-12-12</a>
+<nav aria-label="Основное меню"><a href="index.html">Главная</a><a href="prices.html">Цены</a><a href="instructors.html">Инструкторы</a><a href="pdd-test.html">Тренажёр ПДД</a><a href="branches.html">Филиалы</a><a href="contacts.html">Запись</a></nav>
+</div>
+</header>
+<main id="main">
+<section class="wrap sec doc">
+<h1>Заявка принята</h1>
+<p class="lead">Спасибо! Менеджер по набору свяжется с вами, ответит на вопросы и пригласит на консультацию.</p>
+<p>Номер вашей заявки: <b id="rid">—</b></p>
+<p class="note">Сохраните номер — назовите его менеджеру, если будете звонить сами: <a href="tel:+79003121212" data-event="contact_click" data-contact-type="phone">+7 (900) 312-12-12</a>.</p>
+
+<h2>Что взять на консультацию</h2>
+<ul>
+<li>паспорт;</li>
+<li>медицинскую справку для водителя, если она уже есть;</li>
+<li>студенческий билет — для скидки 15 % студентам очной формы до 30 ноября.</li>
+</ul>
+
+<h2>Мы в соцсетях</h2>
+<p>Разбираем экзаменационные билеты, публикуем расписание и новости набора.</p>
+<p class="soc">
+<a class="btn alt" href="https://instagram.com/pravyy_ryad_school" data-event="social_click" data-network="instagram" data-page-section="thanks">Instagram</a>
+<a class="btn alt" href="https://vk.com/pravyy_ryad_school" data-event="social_click" data-network="vk" data-page-section="thanks">ВКонтакте</a>
+<a class="btn alt" href="https://t.me/pravyy_ryad_school" data-event="social_click" data-network="telegram" data-page-section="thanks">Telegram</a>
+<a class="btn alt" href="https://youtube.com/@pravyy_ryad_school" data-event="social_click" data-network="youtube" data-page-section="thanks">YouTube</a>
+</p>
+<p><a href="pdd-test.html">Пока ждёте звонка — пройдите тренажёр ПДД</a></p>
+</section>
+</main>
+<footer class="foot">
+<div class="wrap">
+<div><b>Центральный:</b> ул. Автомобилистов, 22 — классы, автодром<br><b>Северный:</b> ул. Полярная, 5 — класс<br>Теория: пн, ср, пт с 18:30 до 21:00 или онлайн</div>
+<div><a href="tel:+79003121212" data-event="contact_click" data-contact-type="phone">+7 (900) 312-12-12</a><br><a href="mailto:info@pravyy-ryad.example" data-event="contact_click" data-contact-type="email">info@pravyy-ryad.example</a><br><a href="privacy.html">Политика конфиденциальности</a></div>
+<div class="soc" aria-label="Соцсети">
+<a href="https://instagram.com/pravyy_ryad_school" data-event="social_click" data-network="instagram" data-page-section="footer">Instagram</a>
+<a href="https://vk.com/pravyy_ryad_school" data-event="social_click" data-network="vk" data-page-section="footer">ВКонтакте</a>
+<a href="https://t.me/pravyy_ryad_school" data-event="social_click" data-network="telegram" data-page-section="footer">Telegram</a>
+<a href="https://youtube.com/@pravyy_ryad_school" data-event="social_click" data-network="youtube" data-page-section="footer">YouTube</a>
+</div>
+<p class="copy">© 2026 ЧУ ДПО «Автошкола „Правый ряд“». ИНН 9903 225 914</p>
+</div>
+</footer>
+<script src="js/analytics.js"></script>
+<script src="js/utm.js"></script>
+<script src="js/thanks.js"></script>
+</body>
+</html>
