@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Тренажёр ПДД: 10 вопросов с разбором — Правый ряд</title>
+<meta name="description" content="Проверьте себя: 10 вопросов по Правилам дорожного движения РФ с пояснением и ссылкой на пункт ПДД.">
+<meta property="og:title" content="Тренажёр ПДД: 10 вопросов с разбором — Правый ряд">
+<meta property="og:description" content="Проверьте себя: 10 вопросов по Правилам дорожного движения РФ с пояснением и ссылкой на пункт ПДД.">
+<meta property="og:image" content="https://tz-03-avtoshkola-pravyy-ryad.vercel.app/img/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:url" content="https://tz-03-avtoshkola-pravyy-ryad.vercel.app/pdd-test.html">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ru_RU">
+<meta name="theme-color" content="#1E2329">
+<link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;family=Montserrat:wght@700;800&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-XXXXXXXXXX');</script>
+</head>
+<body>
+<a class="skip" href="#main">К содержанию</a>
+<header class="top">
+<div class="wrap bar">
+<a class="logo" href="index.html"><img src="img/favicon.svg" width="28" height="28" alt="">Правый ряд</a>
+<a class="tel" href="tel:+79003121212" data-event="contact_click" data-contact-type="phone">+7 (900) 312-12-12</a>
+<nav aria-label="Основное меню"><a href="index.html">Главная</a><a href="prices.html">Цены</a><a href="instructors.html">Инструкторы</a><a href="pdd-test.html" class="on" aria-current="page">Тренажёр ПДД</a><a href="branches.html">Филиалы</a><a href="contacts.html">Запись</a></nav>
+</div>
+</header>
+<main id="main">
+<section class="wrap sec quiz">
+<h1>Тренажёр ПДД: 10 вопросов с разбором</h1>
+<div id="q-intro">
+<p class="lead">Вопросы составлены по Правилам дорожного движения РФ. На каждый — три варианта ответа. После ответа вы увидите пояснение и номер пункта ПДД, на который оно опирается.</p>
+<p class="note">Это тренажёр автошколы, а не официальный экзаменационный билет. Займёт около пяти минут.</p>
+<button type="button" class="btn" id="q-start" data-event="pdd_test_start" data-page-section="pdd_page">Начать</button>
+<noscript><p>Для тренажёра нужен JavaScript. Включите его в браузере или запишитесь на занятие по телефону +7 (900) 312-12-12.</p></noscript>
+</div>
+
+<div id="q-box" hidden>
+<p class="note" id="q-num" aria-live="polite">Вопрос 1 из 10</p>
+<div class="q-progress" aria-hidden="true"><span id="q-bar"></span></div>
+<h2 id="q-text" tabindex="-1"></h2>
+<ul class="q-opts" id="q-opts"></ul>
+<div class="q-explain" id="q-explain" hidden aria-live="polite"></div>
+<p class="actions"><button type="button" class="btn" id="q-next" hidden>Следующий вопрос</button></p>
+</div>
+
+<div id="q-result" hidden>
+<h2 tabindex="-1" id="q-result-h">Результат</h2>
+<p class="q-score"><span id="q-score">0</span> из 10</p>
+<p id="q-verdict" class="lead"></p>
+<p>На занятиях по теории разбираем все темы билетов: пн, ср, пт с 18:30 до 21:00 в классе или онлайн. Студентам — скидка 15 % до 30 ноября.</p>
+<p class="actions">
+<a class="btn" href="contacts.html" data-event="cta_click" data-button-name="pdd_result_signup" data-page-section="pdd_result">Записаться на обучение</a>
+<button type="button" class="btn alt" id="q-again" data-event="pdd_test_start" data-page-section="pdd_retry">Пройти ещё раз</button>
+</p>
+</div>
+</section>
+</main>
+<footer class="foot">
+<div class="wrap">
+<div><b>Центральный:</b> ул. Автомобилистов, 22 — классы, автодром<br><b>Северный:</b> ул. Полярная, 5 — класс<br>Теория: пн, ср, пт с 18:30 до 21:00 или онлайн</div>
+<div><a href="tel:+79003121212" data-event="contact_click" data-contact-type="phone">+7 (900) 312-12-12</a><br><a href="mailto:info@pravyy-ryad.example" data-event="contact_click" data-contact-type="email">info@pravyy-ryad.example</a><br><a href="privacy.html">Политика конфиденциальности</a></div>
+<div class="soc" aria-label="Соцсети">
+<a href="https://instagram.com/pravyy_ryad_school" data-event="social_click" data-network="instagram" data-page-section="footer">Instagram</a>
+<a href="https://vk.com/pravyy_ryad_school" data-event="social_click" data-network="vk" data-page-section="footer">ВКонтакте</a>
+<a href="https://t.me/pravyy_ryad_school" data-event="social_click" data-network="telegram" data-page-section="footer">Telegram</a>
+<a href="https://youtube.com/@pravyy_ryad_school" data-event="social_click" data-network="youtube" data-page-section="footer">YouTube</a>
+</div>
+<p class="copy">© 2026 ЧУ ДПО «Автошкола „Правый ряд“». ИНН 9903 225 914</p>
+</div>
+</footer>
+<script src="js/analytics.js"></script>
+<script src="js/utm.js"></script>
+<script src="js/pdd.js"></script>
+</body>
+</html>
