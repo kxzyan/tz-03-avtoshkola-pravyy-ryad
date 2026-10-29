@@ -55,6 +55,7 @@ function doPost(e) {
       if (c === 'utm_source') return v || 'direct';
       if (c === 'utm_medium') return v || 'none';
       if (c === 'utm_campaign' || c === 'utm_content') return v || 'not_set';
+      if (c === 'phone') return "'" + v;            // апостроф: таблица хранит +7… как текст, «+» не теряется
       return v;
     });
     sh.appendRow(row);
