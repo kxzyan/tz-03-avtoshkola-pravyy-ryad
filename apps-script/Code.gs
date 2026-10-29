@@ -5,7 +5,7 @@
  * Один раз запустить setup() — он создаст заголовки, проверку данных и условное форматирование.
  * Пароли и ключи в коде не хранятся; идентификатор таблицы — не секрет.
  */
-var SHEET_ID = 'ВАШ_ID_ТАБЛИЦЫ'; // из адреса таблицы: docs.google.com/spreadsheets/d/<ID>/edit
+var SHEET_ID = '1ExZck83w5phzmtiI822BFeT2oyZDHupcdBE0dBR8vJI'; // из адреса таблицы: docs.google.com/spreadsheets/d/<ID>/edit
 var SHEET_NAME = 'leads';
 var COLS = ['request_id', 'created_at', 'name', 'phone', 'email', 'category', 'branch',
             'utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'status'];
