@@ -6,10 +6,10 @@
 
   function word(n) { return n === 1 ? 'карточка' : n > 1 && n < 5 ? 'карточки' : 'карточек'; }
 
-  document.querySelectorAll('[data-filter]').forEach(function (btn) {
+  document.querySelectorAll('[data-js-filter]').forEach(function (btn) {
     btn.addEventListener('click', function () {
-      var f = btn.dataset.filter, shown = 0;
-      document.querySelectorAll('[data-filter]').forEach(function (b) { b.setAttribute('aria-pressed', b === btn); });
+      var f = btn.dataset.jsFilter, shown = 0;
+      document.querySelectorAll('[data-js-filter]').forEach(function (b) { b.setAttribute('aria-pressed', b === btn); });
       cards.forEach(function (c) {
         var on = f === 'all' || c.dataset.gear === f;
         c.hidden = !on;

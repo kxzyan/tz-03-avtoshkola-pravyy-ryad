@@ -1,12 +1,11 @@
 // Переключатель филиалов (branches.html). Событие branch_select отправляет analytics.js по data-event.
 (function () {
-  var tabs = Array.prototype.slice.call(document.querySelectorAll('[data-branch-tab]'));
+  var tabs = Array.prototype.slice.call(document.querySelectorAll('[data-js-tab]'));
 
   function select(tab, focus) {
     tabs.forEach(function (t) {
       var on = t === tab;
       t.setAttribute('aria-selected', on);
-      t.setAttribute('aria-pressed', on);
       t.tabIndex = on ? 0 : -1;
       document.getElementById(t.getAttribute('aria-controls')).hidden = !on;
     });
@@ -25,6 +24,6 @@
   });
 
   // branches.html#north открывает Северный филиал
-  var start = tabs.filter(function (t) { return '#' + t.dataset.branchTab === location.hash; })[0] || tabs[0];
+  var start = tabs.filter(function (t) { return '#' + t.dataset.jsTab === location.hash; })[0] || tabs[0];
   select(start);
 })();

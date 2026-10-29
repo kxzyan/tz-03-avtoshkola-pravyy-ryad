@@ -23,7 +23,8 @@
     if (!el) return;
     var params = {};
     Object.keys(el.dataset).forEach(function (k) {
-      if (k !== 'event') params[toSnake(k)] = el.dataset[k];
+      // data-event — имя события; data-js-* — служебные атрибуты скриптов, в GA4 не уходят
+      if (k !== 'event' && k.indexOf('js') !== 0) params[toSnake(k)] = el.dataset[k];
     });
     window.track(el.dataset.event, params);
   });
