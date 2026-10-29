@@ -18,7 +18,7 @@ from reportlab.pdfbase.ttfonts import TTFont
 from reportlab.pdfgen import canvas
 from reportlab.graphics.barcode.qr import QrCodeWidget
 
-SITE = os.environ.get('SITE', 'https://tz-03-avtoshkola-pravyy-ryad.vercel.app').rstrip('/')
+SITE = os.environ.get('SITE', 'https://tz-03-avtoshkola-pravyy-ryad-nine.vercel.app').rstrip('/')
 BLUE, YELLOW, DARK = HexColor('#1F6FD1'), HexColor('#F5C518'), HexColor('#1E2329')
 
 pdfmetrics.registerFont(TTFont('Sans', '/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf'))

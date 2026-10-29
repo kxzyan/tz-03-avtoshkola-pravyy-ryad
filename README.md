@@ -4,7 +4,7 @@
 
 | Что | Ссылка |
 |---|---|
-| Сайт на Vercel | https://tz-03-avtoshkola-pravyy-ryad.vercel.app <!-- проверить фактический адрес проекта на Vercel --> |
+| Сайт на Vercel | https://tz-03-avtoshkola-pravyy-ryad-nine.vercel.app |
 | Таблица заявок «PravyyRyad — Leads» | ____ |
 | Дашборд DataLens «ПРАВЫЙ РЯД — students_nov_2026» | ____ |
 | Instagram — профиль и Reel с автоответами | ____ |
@@ -51,7 +51,7 @@ tz-03-avtoshkola-pravyy-ryad/
 2. **GA4.** Ресурс «ПРАВЫЙ РЯД — сайт», часовой пояс (GMT+03:00) Москва, валюта — российский рубль; веб-поток с адресом Vercel, Enhanced measurement включён вместе с взаимодействиями с формами. Затем `python3 tools/configure.py --ga G-…` и push. Пользовательские параметры и ключевые события — по `docs/events.md`.
 3. **Таблица и приёмник.** Создать таблицу «PravyyRyad — Leads», в Расширения → Apps Script вставить `apps-script/Code.gs`, указать `SHEET_ID`, запустить `setup()`, развернуть как веб-приложение (выполнять от имени владельца, доступ — все). URL `/exec`: `python3 tools/configure.py --app <URL>` и push.
 4. **Реестр ссылок.** Загрузить `docs/utm.csv` в ту же таблицу на лист `utm`; полную ссылку собрать формулой (столбец I), например:
-   `="https://tz-03-avtoshkola-pravyy-ryad.vercel.app/"&ЕСЛИОШИБКА(ЛЕВСИМВ(H2;НАЙТИ("#";H2)-1);H2)&"?utm_source="&D2&"&utm_medium="&E2&"&utm_campaign="&F2&"&utm_content="&G2&ЕСЛИОШИБКА(ПСТР(H2;НАЙТИ("#";H2);100);"")`
+   `="https://tz-03-avtoshkola-pravyy-ryad-nine.vercel.app/"&ЕСЛИОШИБКА(ЛЕВСИМВ(H2;НАЙТИ("#";H2)-1);H2)&"?utm_source="&D2&"&utm_medium="&E2&"&utm_campaign="&F2&"&utm_content="&G2&ЕСЛИОШИБКА(ПСТР(H2;НАЙТИ("#";H2);100);"")`
    В U-10 и U-11 вместо `blogger1_nick` / `blogger2_nick` вписать ники партнёров латиницей. После публикаций заполнить короткие ссылки (vk.cc, clck.ru), адреса и даты и снова выгрузить лист в `docs/utm.csv`.
 
 ## Проверки
