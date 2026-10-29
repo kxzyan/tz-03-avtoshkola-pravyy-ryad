@@ -1,6 +1,6 @@
 // Форма заявки (contacts.html): проверка полей, скрытые поля, отправка в Apps Script через fetch.
 // Адрес веб-приложения Apps Script (Развернуть → Веб-приложение → URL, оканчивается на /exec):
-var APP_URL = 'https://script.google.com/macros/s/ВАШ_ID/exec';
+var APP_URL = 'https://script.google.com/macros/s/AKfycbyaTmUNIm6EnXVKWBAF2YJXuKb--m522qZjAVxQBDlMaiUqdNiKm93ziDp7k0ACXSbt/exec';
 
 (function () {
   var UTM = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_content'];

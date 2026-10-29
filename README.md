@@ -5,7 +5,7 @@
 | Что | Ссылка |
 |---|---|
 | Сайт на Vercel | https://tz-03-avtoshkola-pravyy-ryad-nine.vercel.app |
-| Таблица заявок «PravyyRyad — Leads» | ____ |
+| Таблица заявок «PravyyRyad — Leads» | https://docs.google.com/spreadsheets/d/1ExZck83w5phzmtiI822BFeT2oyZDHupcdBE0dBR8vJI/edit |
 | Дашборд DataLens «ПРАВЫЙ РЯД — students_nov_2026» | ____ |
 | Instagram — профиль и Reel с автоответами | ____ |
 | ВКонтакте — пост U-05 / пост колледжа U-06 | ____ / ____ |
