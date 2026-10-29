@@ -126,3 +126,5 @@ fieldset.radios legend{font-weight:600;padding:0;margin-bottom:4px}
 .foot a{color:#fff;display:inline-flex;align-items:center;min-height:44px}
 .soc{display:flex;flex-wrap:wrap;gap:0 16px;align-items:flex-start}
 .copy{flex-basis:100%;font-size:14px;margin:8px 0 0;color:#aeb6bf}
+.tabs .btn[aria-selected="true"]{background:var(--b);color:#fff}
+.sec-gap{margin-top:36px}
