@@ -7,6 +7,7 @@
 | Сайт на Vercel | https://tz-03-avtoshkola-pravyy-ryad-nine.vercel.app |
 | Таблица заявок «PravyyRyad — Leads» | https://docs.google.com/spreadsheets/d/1ExZck83w5phzmtiI822BFeT2oyZDHupcdBE0dBR8vJI/edit |
 | Дашборд DataLens «ПРАВЫЙ РЯД — students_nov_2026» | ____ |
+| Презентация проекта | `docs/presentation.pdf` |
 | Instagram — профиль / Reel с автоответами (ManyChat: «IG · Students Nov 2026 · Exam Reel», «… · АВТОМАТ») | https://www.instagram.com/axaxaxaxaxaxaxaxaxaxaxaxv/ / https://www.instagram.com/p/DfGLO3UhuaM/ |
 
 
@@ -46,6 +47,7 @@ tz-03-avtoshkola-pravyy-ryad/
 │   ├── images.md        источники изображений
 │   ├── report.md        аналитическая записка
 │   ├── reports/         traffic-acquisition.csv, free-form.csv
+│   ├── presentation.pdf презентация проекта (14 слайдов)
 │   └── afisha.pdf, qr-u-12.png
 ├── screens/ga4/  utm/  instagram/  reports/  explore/  datalens/  lighthouse/
 └── tools/               скрипты для генерации файлов (на работу сайта не влияют)
