@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Заявка (урок 5) — Правый ряд</title>
+<meta name="description" content="Оставьте заявку на обучение в автошколе «Правый ряд». Менеджер свяжется с вами. Телефон, Telegram и WhatsApp.">
+<meta name="theme-color" content="#1E2329">
+<link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;family=Montserrat:wght@700;800&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-MTKHK71P7G"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());var dbg=/[?\&]debug=1/.test(location.search);try{if(dbg)sessionStorage.setItem('ga_debug','1');dbg=dbg||sessionStorage.getItem('ga_debug')==='1'}catch(e){}gtag('config','G-MTKHK71P7G',dbg?{debug_mode:true}:{});
+gtag('config','G-2JQK10WEM7',dbg?{debug_mode:true}:{});</script>
+</head>
+<body>
+<a class="skip" href="#main">К содержанию</a>
+<header class="top">
+<div class="wrap bar">
+<a class="logo" href="index.html"><img src="img/favicon.svg" width="28" height="28" alt="">Правый ряд</a>
+<a class="tel" href="tel:+79003121212" data-event="contact_click" data-contact-type="phone">+7 (900) 312-12-12</a>
+<nav aria-label="Основное меню"><a href="index.html">Главная</a><a href="prices.html">Цены</a><a href="instructors.html">Инструкторы</a><a href="pdd-test.html">Тренажёр ПДД</a><a href="branches.html">Филиалы</a><a href="contacts.html">Запись</a></nav>
+</div>
+</header>
+<main id="main">
+<section class="wrap sec">
+<h1>Заявка в таблицу (учебная форма, урок 5)</h1>
+<p class="lead">Тестовая форма для домашней работы: заявка уходит в Google Таблицу через Apps Script. Используйте вымышленные данные.</p>
+<div class="box">
+<form id="lead-form" action="https://script.google.com/macros/s/AKfycbyUcnqmOSFfy3P8309rUuHBC03DUU-jG45k1ueCup1zF6gtSgwHeM_k15Ae5Fz5H3MEUQ/exec" method="POST" target="submission-frame">
+  <label>Имя
+    <input name="name" required maxlength="200" autocomplete="off" placeholder="Иван Тестов">
+  </label>
+  <label>Email
+    <input name="email" type="email" required maxlength="200" autocomplete="off" placeholder="student@example.com">
+  </label>
+  <label>Направление
+    <select name="direction" required>
+      <option value="">Выберите направление</option>
+      <option value="frontend">Frontend</option>
+      <option value="backend">Backend</option>
+      <option value="data">Data</option>
+    </select>
+  </label>
+  <input type="hidden" name="request_id" id="request_id">
+  <input type="hidden" name="utm_source" id="utm_source">
+  <input type="hidden" name="utm_medium" id="utm_medium">
+  <input type="hidden" name="utm_campaign" id="utm_campaign">
+  <button type="submit" class="btn">Отправить заявку</button>
+  <button type="reset" class="btn alt">Новая заявка</button>
+  <p id="form-status" role="status"></p>
+</form>
+<iframe name="submission-frame" id="submission-frame" title="Ответ приёмника заявок" hidden></iframe>
+</div>
+</section>
+</main>
+<footer class="foot">
+<div class="wrap">
+<div><b>Центральный:</b> ул. Автомобилистов, 22 — классы, автодром<br><b>Северный:</b> ул. Полярная, 5 — класс<br>Теория: пн, ср, пт с 18:30 до 21:00 или онлайн</div>
+<div><a href="tel:+79003121212" data-event="contact_click" data-contact-type="phone">+7 (900) 312-12-12</a><br><a href="mailto:info@pravyy-ryad.example" data-event="contact_click" data-contact-type="email">info@pravyy-ryad.example</a><br><a href="privacy.html">Политика конфиденциальности</a></div>
+<div class="soc" aria-label="Соцсети">
+<a href="https://instagram.com/pravyy_ryad_school" data-event="social_click" data-network="instagram" data-page-section="footer">Instagram</a>
+<a href="https://vk.com/pravyy_ryad_school" data-event="social_click" data-network="vk" data-page-section="footer">ВКонтакте</a>
+<a href="https://t.me/pravyy_ryad_school" data-event="social_click" data-network="telegram" data-page-section="footer">Telegram</a>
+<a href="https://youtube.com/@pravyy_ryad_school" data-event="social_click" data-network="youtube" data-page-section="footer">YouTube</a>
+</div>
+<p class="copy">© 2026 ЧУ ДПО «Автошкола „Правый ряд“». ИНН 9903 225 914</p>
+</div>
+</footer>
+<script src="js/lead-form.js" defer></script>
+<script src="js/metrics.js" defer></script>
+</body>
+</html>
